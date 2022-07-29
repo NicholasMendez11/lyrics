@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 function Form({ saveLyric }) {
   const [search, saveSearch] = useState({
@@ -77,7 +77,14 @@ function Form({ saveLyric }) {
                 </div>
               </div>
               <div className="d-flex justify-content-end">
-              <Button onClick={searchInfo} size="lg" className="mt-2" variant="dark">Dark</Button>
+                <Button
+                  onClick={searchInfo}
+                  size="lg"
+                  className="mt-2"
+                  variant="dark"
+                >
+                  Search
+                </Button>
               </div>
             </fieldset>
           </form>
