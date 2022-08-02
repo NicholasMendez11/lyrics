@@ -1,15 +1,14 @@
 import React from "react";
 
-function Footer({lyric}) {
-  let bottom = (lyric === "")? "fixed-bottom" : null;
+function Footer({ lyric }) {
+  let bottom = lyric === "" ? "fixed-bottom" : null;
   return (
     <footer class={`bg-dark text-center text-white ${bottom}`}>
       <div class="container p-4 pb-0">
-
         <section class="mb-4">
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://www.facebook.com/nicholas.mendezbertrand"
             role="button"
           >
             <i class="fab fa-facebook-f"></i>
@@ -17,23 +16,7 @@ function Footer({lyric}) {
 
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-google"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://www.instagram.com/nicholas_meendez/"
             role="button"
           >
             <i class="fab fa-instagram"></i>
@@ -41,7 +24,7 @@ function Footer({lyric}) {
 
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://www.linkedin.com/in/nicholasgmendez/"
             role="button"
           >
             <i class="fab fa-linkedin-in"></i>
@@ -49,7 +32,7 @@ function Footer({lyric}) {
 
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://github.com/NicholasMen"
             role="button"
           >
             <i class="fab fa-github"></i>
@@ -59,11 +42,11 @@ function Footer({lyric}) {
 
       <div
         class="text-center p-3"
-        style={{backgroundcolor: "rgba(0, 0, 0, 0.2)"}}
+        style={{ backgroundcolor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © {new Date().getFullYear() } Copyright:
+        © {new Date().getFullYear()} Copyright:
         <a class="text-white" href="https://mdbootstrap.com/">
-           NicholasMendez
+          NicholasMendez
         </a>
       </div>
     </footer>
